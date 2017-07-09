@@ -34,7 +34,7 @@
                 <img src="{{ $blog->image->url }}" width="100%">
             @endif
 
-            <p>{{ $blog->description  }}</p>
+            <h5 style="margin-top: 40px;" >{{ $blog->description  }}</h5>
             <h2>Posted by <b><a href="{{ @route('user', $blog->user->id) }}">{{ $blog->user->name }}</a></b> {{ $blog->created_at->diffForHumans() }}</h2>
             <hr>
             @php
