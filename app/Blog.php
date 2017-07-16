@@ -18,6 +18,8 @@ class Blog extends \Eloquent {
         return $this->hasOne('App\Image', 'imagable_id');
     }
 
-
+    public function comments(){
+        return $this->morphToMany("App\Comment", "commentable");
+    }
 
 }

@@ -66,7 +66,7 @@
                                         <a href="/user/{{ Auth::user()->id}}">Profile</a>
                                     </li>
                                     <li>
-                                        <a href="{{ @route('newBlog') }}">New Blog Post</a>
+                                        <a href="{{ route('newBlog') }}">New Blog Post</a>
                                     </li>
                                     <li>
                                         <a href="{{ route('logout') }}"

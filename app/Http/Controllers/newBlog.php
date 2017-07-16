@@ -41,11 +41,10 @@ class newBlog extends Controller
 
         $image = new \App\Image;
         $image->url = $request->banner;
-        $image->save();
-
-        $blog->image()->attach($image->id);
-
         $blog->save();
+        $blog->image()->save($image);
+
+
 
 
         if($request->tags[0]){
@@ -66,6 +65,7 @@ class newBlog extends Controller
         }
 
         return response()->json(["status" => "success", "tags"=> $request->tags]);
+
     }
 
 }

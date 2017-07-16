@@ -56,10 +56,19 @@
             </article>
         </div>
     </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div id="comments">
+                <comments slug="{{ $blog->slug }}"></comments>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection
 
 @section('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    <script src="/js/comments/comments.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 @endsection

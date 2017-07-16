@@ -2,5 +2,6 @@
   "/js/app.js": "/js/app.js",
   "/css/app.css": "/css/app.css",
   "/mix.js": "/mix.js",
-  "/css/write/style.css": "/css/write/style.css"
+  "/css/write/style.css": "/css/write/style.css",
+  "/js/comments/comments.js": "/js/comments/comments.js"
 }

@@ -15,3 +15,5 @@ const { mix } = require('laravel-mix');
 //    .sass('resources/assets/sass/app.scss', 'public/css');
 
 mix.sass('resources/assets/sass/write/style.scss', 'public/css/write');
+
+mix.js('resources/assets/js/comments.js', 'public/js/comments');

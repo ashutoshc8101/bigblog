@@ -283,7 +283,7 @@
                     banner : imageUrl,
                     _token : $('meta[name="csrf-token"]').attr('content')
                 },
-                url: "/write",
+                url: "{{ route("newBlogPost") }}",
 
                 success: function(data){
                     console.log(data);

@@ -11,6 +11,7 @@
         "davidbadura/faker-markdown-generator": "^1.0",
         "fzaninotto/faker": "^1.6",
         "graham-campbell/exceptions": "^9.3",
+        "jafaripur/laravel-comment": "dev-master",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0"
     },

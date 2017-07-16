@@ -16,14 +16,4 @@ class homeController extends Controller{
     }
 
 
-    public function blog(Request $Request, Response $Response, $slug){
-        $blog = Blog::where('slug', $slug)->first();
-        if($blog != null){
-            return view('blog', ['blog' => $blog]);
-        }
-
-
-
-    }
-
 }
